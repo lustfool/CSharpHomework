@@ -3,7 +3,7 @@ Console.Write("Введите число => ");
 string paramString = Console.ReadLine();
 int paramInt = int.Parse(paramString);
 
-int n = 1;
+int n = 2;
 Console.Write("Чётные числа: ");
 while (n <= paramInt)
 {
@@ -11,5 +11,5 @@ while (n <= paramInt)
     {
         Console.Write($"{n}, ");
     }
-    n = n + 1;
+    n = n + 2;
 }

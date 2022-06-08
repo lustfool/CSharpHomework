@@ -11,11 +11,11 @@ string paramStringThird = Console.ReadLine();
 int paramIntThird = int.Parse(paramStringThird);
 
 int max = paramIntFirst;
-if (paramIntSecond >= max && paramIntSecond >= paramIntThird) //больше или равно указано для того случая, когда среди введённых есть два одинаковых числа
+if (paramIntSecond >= max) //больше или равно указано для того случая, когда среди введённых есть два одинаковых числа
 {
     max = paramIntSecond; 
 }
-if (paramIntThird >= max && paramIntThird >= paramIntSecond)
+if (paramIntThird >= max)
 {
     max = paramIntThird;
 }

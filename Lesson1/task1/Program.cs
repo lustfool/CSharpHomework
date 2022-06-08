@@ -15,7 +15,7 @@ if (paramIntSecond > paramIntFirst)
 {
     Console.Write($"Большее число =  {paramIntSecond}, меньшее число = {paramIntFirst}");
 }
-else
+if (paramIntSecond == paramIntFirst)
 {
-    Console.Write("Числа равны");  //раньше было только одно условие и else, но пришлось добавить второе на случай равенства введённых чисел
+    Console.Write("Числа равны");
 }
