@@ -12,12 +12,12 @@ int Prompt(string message)
 
 string PointOfCollision(double b1, double k1, double b2, double k2)
 {
-    var x = (b2 - b1) / (k1 - k2);
     if (k1 - k2 == 0) 
     {
         System.Console.WriteLine("Линии параллельны.");
         Environment.Exit(0);
     }
+    var x = (b2 - b1) / (k1 - k2);
     var y = k2 * x + b2;
     string result = $"({x}; {y})";
     return result;
