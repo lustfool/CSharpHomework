@@ -7,7 +7,7 @@ int Prompt(string message)
     return int.Parse(Console.ReadLine());
 }
 
-void PrintOddNaturalNumbers(int firstNumber, int secondNumber)
+void PrintEvenNaturalNumbers(int firstNumber, int secondNumber)
 {
     if (firstNumber > secondNumber)
     {
@@ -15,10 +15,10 @@ void PrintOddNaturalNumbers(int firstNumber, int secondNumber)
     }
     if (firstNumber % 2 == 0)
         Console.Write($"{firstNumber}; ");
-    PrintOddNaturalNumbers(firstNumber + 1, secondNumber);
+    PrintEvenNaturalNumbers(firstNumber + 1, secondNumber);
 }
 
 int M = Prompt($"Введите 1е число => ");
 int N = Prompt($"Введите 2е число => ");
 Console.WriteLine($"Чётные натуральные числа в промежутке от {M} до {N}:");
-PrintOddNaturalNumbers(M, N);
+PrintEvenNaturalNumbers(M, N);
